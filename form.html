@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Form Gửi Thông Tin</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Thông Tin Người Chơi</h1>
+        <h3 style="text-align: center;">E:VN-KD3862</h3>
+        <form action="/submit" method="POST">
+            <label for="name">Tên ingame:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="zalo">Tên Zalo:</label>
+            <input type="text" id="zalo" name="zalo" required>
+
+            <label for="phone">Số Điện Thoại:</label>
+            <input type="text" id="phone" name="phone" required>
+
+            <label for="uid">ID Game:</label>
+            <input type="text" id="uid" name="uid" required>
+
+            <button type="submit">Gửi</button>
+        </form>
+    </div>
+</body>
+</html>
